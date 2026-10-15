@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "delay.o" "i2c.o" "i2c_eeprom.o" "interrupt_pg.o" "kpm.o" "lcd.o" "spi_eeprom.o" "main_pg.o" "max.o" "mcp3204.o" "menu_pg.o" "spi.o" "uart0.o" "esp01_test2.o" "timer0.o" --strict --scatter "majorproject_test.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\majorproject_test.map" -o "majorproject_test.axf"
