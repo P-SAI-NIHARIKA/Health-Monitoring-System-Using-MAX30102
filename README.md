@@ -209,5 +209,3 @@ GitHub: [P-SAI-NIHARIKA](https://github.com/P-SAI-NIHARIKA)
 - **Domain:** Embedded Systems
 
 
-medical advice.
-
