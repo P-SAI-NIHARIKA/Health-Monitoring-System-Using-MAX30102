@@ -91,7 +91,7 @@ The LPC2148 acts as the central controller and communicates with the MAX30102 se
 
 ### System Block Diagram
 
-![Health Monitoring System Block Diagram](project_images/health_monitoring_block_diagram.png)
+![Health Monitoring System Setup](project_images/MAX30102_Health_Monitoring.png)
 
 *The block diagram illustrates the system architecture and the connections between the microcontroller and peripherals. Optional LCD and IoT features depend on the implemented hardware and firmware.*
 
@@ -126,12 +126,6 @@ The measured or estimated values can be displayed on an LCD, depending on the im
 If the ESP-01 and ThingSpeak features are implemented, the measurements can be transmitted over Wi-Fi for remote visualization.
 
 ## 📷 Project Images
-
-### 🔬 Health Monitoring System Setup
-
-The hardware setup of the Health Monitoring System using the LPC2148 ARM7 microcontroller and MAX30102 sensor.
-
-![Health Monitoring System Setup](project_images/MAX30102_Health_Monitoring.png)
 
 ### 🩺 MAX30102 Sensor Setup
 
