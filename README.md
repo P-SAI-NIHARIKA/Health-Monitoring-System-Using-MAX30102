@@ -180,7 +180,6 @@ Health-Monitoring-System-Using-MAX30102/
 └── main major project test.hex
 ```
 
-*This is a simplified representation of the main source code, header file, firmware file, README, and project images. Auxiliary build files such as `.o`, `.d`, `.crf`, `.lst`, and `.map` are omitted for readability. Other existing project files are not deleted or changed.*
 
 ## 🧠 Concepts Demonstrated
 
