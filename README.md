@@ -91,7 +91,7 @@ The LPC2148 acts as the central controller and communicates with the MAX30102 se
 
 ### System Block Diagram
 
-![Health Monitoring System Block Diagram](system_block_diagram.jpg)
+![Health Monitoring System Block Diagram](project_images/health_monitoring_block_diagram.png)
 
 *The block diagram illustrates the system architecture and the connections between the microcontroller and peripherals. Optional LCD and IoT features depend on the implemented hardware and firmware.*
 
@@ -131,38 +131,62 @@ If the ESP-01 and ThingSpeak features are implemented, the measurements can be t
 
 The hardware setup of the Health Monitoring System using the LPC2148 ARM7 microcontroller and MAX30102 sensor.
 
-![Health Monitoring System Setup](health_monitoring_setup_1.jpg)
+![Health Monitoring System Setup](project_images/MAX30102_Health_Monitoring.png)
 
 ### 🩺 MAX30102 Sensor Setup
 
 A view of the MAX30102 sensor and its hardware connections used for health monitoring.
 
-![MAX30102 Sensor Setup](health_monitoring_setup_2.jpg)
+![MAX30102 Sensor Setup](project_images/max30102_sensor.jpg)
+
+### 📊 System Output
+
+The output of the Health Monitoring System during operation.
+
+![Health Monitoring System Output](project_images/system_output.jpg)
 
 ## 📁 Project Structure
 
-The repository contains Embedded C source code, startup files, header files, project documentation, and images.
+The repository contains Embedded C source files for sensor interfacing, communication protocols, peripheral control, timers, interrupts, and the main application, together with the project documentation and images.
 
 ```text
 Health-Monitoring-System-Using-MAX30102/
 │
-├── MAX.c
-├── Startup.d
-├── Startup.lst
-├── Startup.o
-├── Startup.s
-├── Timer1.c
-├── all_defines.h
-├── delay.c
-├── delay.crf
-├── delay.d
 ├── README.md
-├── system_block_diagram.jpg
-├── health_monitoring_setup_1.jpg
-└── health_monitoring_setup_2.jpg
+│
+├── project_images/
+│   ├── MAX30102_Health_Monitoring.png
+│   ├── max30102_sensor.jpg
+│   ├── system_output.jpg
+│   └── health_monitoring_block_diagram.png
+│
+├── MAX.c
+├── I2C.c
+├── I2C EEPROM.c
+├── SPI.c
+├── SPI EEPROM.c
+├── UART0.c
+├── UART0 test.c
+├── ESP01.c
+├── ESP01 test.c
+├── LCD.c
+├── KPM.c
+├── MCP3204.c
+├── RTC.c
+├── interrupt.c
+├── timer0.c
+├── timer0 and 1.c
+├── timer1.c
+├── main PG.c
+├── main test.c
+├── menu PG.c
+├── test.c
+├── test2.c
+├── project PG.h
+└── main major project test.hex
 ```
 
-*This is an illustrative structure based on the visible repository files. Keep any additional existing files and folders in your actual repository.*
+*This is a simplified representation of the main source code, header file, firmware file, README, and project images. Auxiliary build files such as `.o`, `.d`, `.crf`, `.lst`, and `.map` are omitted for readability. Other existing project files are not deleted or changed.*
 
 ## 🧠 Concepts Demonstrated
 
@@ -207,5 +231,4 @@ GitHub: [P-SAI-NIHARIKA](https://github.com/P-SAI-NIHARIKA)
 - **Programming Language:** Embedded C
 - **Sensor:** MAX30102
 - **Domain:** Embedded Systems
-
 
